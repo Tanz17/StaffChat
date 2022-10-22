@@ -1,12 +1,11 @@
 package ru.tanz.chat;
 
 import org.bukkit.Bukkit;
-import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import ru.tanz.StaffChat;
 import ru.tanz.utils.ConfigUtil;
 
-public class ChatManager implements Listener {
+public class ChatManager{
 
 
     public void handle(AsyncPlayerChatEvent event) {
