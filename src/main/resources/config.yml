@@ -1,0 +1,10 @@
+messages:
+  help: ''
+  permission: 'У вас недостаточно прав.'
+
+chats:
+  admin:
+    prefix: '&8[&cАдмин-Чат&8]&f'
+    symbol: '#'
+    permission: 'admin.use'
+    sender: '&c(by %player%)'

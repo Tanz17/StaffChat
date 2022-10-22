@@ -1,0 +1,8 @@
+name: tStaffChat
+version: '${project.version}'
+main: ru.tanz.StaffChat
+authors: [ Tanz ]
+commands:
+  tstaffchat:
+    aliases:
+      - staffchat
