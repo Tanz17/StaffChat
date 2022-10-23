@@ -25,7 +25,7 @@ public class ChatManager{
                                 player.sendMessage(msg);
                                 event.setCancelled(true);
                             } else {
-                                player.sendMessage(ConfigUtil.getString("messages.permission"));
+                                event.setCancelled(false);
                             }
                         });
                     }
