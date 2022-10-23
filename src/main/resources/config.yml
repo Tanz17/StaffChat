@@ -1,6 +1,5 @@
 messages:
   help: ''
-  permission: 'У вас недостаточно прав.'
 
 chats:
   admin:
