@@ -14,6 +14,7 @@ public class ChatManager{
                 .findFirst()
                 .ifPresent(command -> {
                     if(event.getPlayer().hasPermission(command.getPermission())) {
+                        event.setCancelled(true);
                         Bukkit.getOnlinePlayers().forEach(player -> {
                             if (player.hasPermission(command.getPermission())) {
                                 String msg = ConfigUtil.color(command.getPrefix()
@@ -24,8 +25,6 @@ public class ChatManager{
                                         event.getPlayer().getName()));
                                 player.sendMessage(msg);
                                 event.setCancelled(true);
-                            } else {
-                                event.setCancelled(false);
                             }
                         });
                     }
